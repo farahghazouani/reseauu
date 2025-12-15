@@ -91,7 +91,7 @@ with st.sidebar:
     )
     st.info(f"Surcharge appliquée : **{overhead}%**")
     st.markdown("---")
-    st.caption("Projet CCNA Streamlit - Gemini 'Coding Engine'")
+    st.caption("Projet Reseau'")
 
 
 # --- Entrées Principales ---
@@ -161,4 +161,5 @@ else:
         st.write("Le calcul est basé sur la formule : Temps = (Taille du Fichier en bits) / (Vitesse du Lien en bits/seconde).")
         st.markdown(f"* Taille totale avec **{overhead}%** d'overhead : **{file_size * (1 + overhead / 100):,.2f} {file_unit}**")
         st.markdown(f"* Vitesse du lien utilisée : **{link_speed} {speed_unit}**")
+
         st.info("Le code utilise la norme décimale (base 1000) pour les débits réseau (Mbps/Gbps) et la norme binaire (base 1024) pour les tailles de fichier (Mo/Go), conformément aux pratiques courantes du réseau.")
